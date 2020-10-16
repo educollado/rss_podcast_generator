@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
+	xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+<channel>
+<title>A Ratos Podcast</title>
+<atom:link href="https://mysuperpodcast.com/podcast.rss" rel="self" type="application/rss+xml" />
+<link>https://mysuperpodcast.com</link>
+<description>Description of my podcast</description>
+<lastBuildDate>Fri, 16 Oct 2020 15:45:24 +0000</lastBuildDate>
+<language>es</language>
+	<atom:link rel="hub" href="https://pubsubhubbub.appspot.com/" />
+	<itunes:summary>iTunes podcast summary</itunes:summary>
+	<itunes:author>John Doe</itunes:author>
+	<itunes:explicit>clean</itunes:explicit>
+	<itunes:image href="http://mysuperpodcast.com/image1600x1600.jpg" />
+	<itunes:type>episodic</itunes:type>
+	<itunes:owner>
+		<itunes:name>John Doe</itunes:name>
+		<itunes:email>podcast@mysuperpodcast.com</itunes:email>
+	</itunes:owner>
+	<managingEditor>podcast@mysuperpodcast.com</managingEditor>
+	<copyright>John Doe</copyright>
+	<itunes:subtitle>iTunes subtitle for my podcast</itunes:subtitle>
+	<image>
+		<title>A Ratos Podcast</title>
+		<url>http://mysuperpodcast.com/image1600x1600.jpg</url>
+		<link>https://mysuperpodcast.com</link>
+	</image>
+	<itunes:category text="Technology" />
+	<googleplay:category text="Technology"/>
+	<itunes:category text="News" />
+	<itunes:category text="Education" />
+	<rawvoice:rating>TV-Y</rawvoice:rating>
+	<rawvoice:location>Madrid, Spain</rawvoice:location>
+	<rawvoice:frequency>weekly</rawvoice:frequency>
+<rawvoice:subscribe feed="https://mysuperpodcast.com/podcast.rss" itunes="None" tunein="None" spotify="None"></rawvoice:subscribe>
+
+<item>
+	<title>My super chapter</title>
+	<link>https://misuperchapter.com/chaper1</link>
+	<dc:creator><![CDATA[John Doe]]></dc:creator>
+	<pubDate>Fri, 31 Dec 1999 23:59:59 EST</pubDate>
+	<category><![CDATA[Tehcnology]]></category>
+	<category><![CDATA[News]]></category>
+	<category><![CDATA[Education]]></category>
+	<description><![CDATA[Chapter description]]></description>
+	<content:encoded><![CDATA[Chapter content]]></content:encoded>
+	<enclosure url="https://misuperchapter.com/chaper1.mp3" length="207310" type="audio/mpeg" />
+	<itunes:subtitle>iTunes chapter subtitle</itunes:subtitle>
+	<itunes:summary><![CDATA[iTunes chapter summary]]></itunes:summary>
+	<itunes:author>John Doe</itunes:author>
+	<itunes:duration>1754</itunes:duration>
+</item>
+
+</channel>
+</rss>

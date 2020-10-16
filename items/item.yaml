@@ -1,0 +1,18 @@
+title: My super chapter
+link: https://misuperchapter.com/chaper1
+creator: John Doe
+pubDate: Fri, 31 Dec 1999 23:59:59 EST
+categories:
+  - Tehcnology
+  - News
+  - Education
+description: Chapter description
+content: Chapter content
+enclosure: https://misuperchapter.com/chaper1.mp3
+length: 207310
+type: audio/mpeg
+itunes:
+  subtitle: iTunes chapter subtitle
+  summary: iTunes chapter summary
+  author: John Doe
+  duration: 29:14

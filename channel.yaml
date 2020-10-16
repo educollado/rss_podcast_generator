@@ -1,0 +1,29 @@
+title: A Ratos Podcast
+feed_link: https://mysuperpodcast.com/podcast.rss
+web_link: https://mysuperpodcast.com
+description: Description of my podcast
+language: es
+itunes:
+  subtitle: iTunes subtitle for my podcast
+  summary: iTunes podcast summary
+  author: John Doe
+  explicit: clean
+  image: http://mysuperpodcast.com/image1600x1600.jpg
+  type: episodic
+  owner:
+    name: John Doe
+    email: podcast@mysuperpodcast.com
+  categories:
+    - Technology
+    - News
+    - Education
+copyright: John Doe
+rating: TV-Y
+location: Madrid, Spain
+frequency: weekly
+subscribe:
+  feed: https://mysuperpodcast.com/podcast.rss
+  itunes: 
+  tunein: 
+  spotify: 
+
