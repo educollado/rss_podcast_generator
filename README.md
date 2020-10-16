@@ -15,10 +15,12 @@ In all yaml files inside folder items you can write everything you need, one fil
 The name of the fale is not importart but you need the file to end in .yaml.
 
 To work after fill the configuration files simple:
+
 python rssgenerator.py
 
 
 To install dependencies I suggest to use:
+
 pip install -r requirements.txt
 
 # The output
