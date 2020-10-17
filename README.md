@@ -1,9 +1,10 @@
+# RSS Podcast Generator
 ![GitHub](https://img.shields.io/github/license/educollado/rss_podcast_generator)
 ![GitHub last commit](https://img.shields.io/github/last-commit/educollado/rss_podcast_generator)
 ![GitHub repo size](https://img.shields.io/github/repo-size/educollado/rss_podcast_generator)
 ![Twitter Follow](https://img.shields.io/twitter/follow/ecollado)
 ![Mastodon Follow](https://img.shields.io/mastodon/follow/72314?domain=https%3A%2F%2Fmastodon.social&style=social)
-# rss_podcast_generator
+
 Script to generate a podcast feed for static sites.
 
 ## How it works
@@ -35,5 +36,63 @@ pip install -r requirements.txt
 
 In output folder you have the file podcast.rss, this is your feed and now you can upload where you need it.
 
+## Configuration Files
+
+example of configuration files:
+
+### channel.yaml (this name is forced)
+```php
+title: A Ratos Podcast
+feed_link: https://mysuperpodcast.com/podcast.rss
+web_link: https://mysuperpodcast.com
+description: Description of my podcast
+language: es
+itunes:
+  subtitle: iTunes subtitle for my podcast
+  summary: iTunes podcast summary
+  author: John Doe
+  explicit: clean
+  image: http://mysuperpodcast.com/image1600x1600.jpg
+  type: episodic
+  owner:
+    name: John Doe
+    email: podcast@mysuperpodcast.com
+  categories:
+    - Technology
+    - News
+    - Education
+copyright: John Doe
+rating: TV-Y
+location: Madrid, Spain
+frequency: weekly
+subscribe:
+  feed: https://mysuperpodcast.com/podcast.rss
+  itunes: 
+  tunein: 
+  spotify: 
+
+```
+
+### item.yaml (any name ended in .yaml)
+```php
+title: My super chapter
+link: https://misuperchapter.com/chaper1
+creator: John Doe
+pubDate: Fri, 31 Dec 1999 23:59:59 EST
+categories:
+  - Tehcnology
+  - News
+  - Education
+description: Chapter description
+content: Chapter content
+enclosure: https://misuperchapter.com/chaper1.mp3
+length: 207310
+type: audio/mpeg
+itunes:
+  subtitle: iTunes chapter subtitle
+  summary: iTunes chapter summary
+  author: John Doe
+  duration: 29:14
+```
 ## License
 [GPL3](https://github.com/educollado/rss_podcast_generator/blob/main/LICENSE)
