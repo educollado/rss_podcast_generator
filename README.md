@@ -1,3 +1,8 @@
+![GitHub](https://img.shields.io/github/license/educollado/rss_podcast_generator)
+![GitHub last commit](https://img.shields.io/github/last-commit/educollado/rss_podcast_generator)
+![GitHub repo size](https://img.shields.io/github/repo-size/educollado/rss_podcast_generator)
+![Twitter Follow](https://img.shields.io/twitter/follow/ecollado)
+![Mastodon Follow](https://img.shields.io/mastodon/follow/72314?domain=https%3A%2F%2Fmastodon.social&style=social)
 # rss_podcast_generator
 Script to generate a podcast feed for static sites.
 
