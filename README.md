@@ -38,6 +38,8 @@ In output folder you have the file podcast.rss, this is your feed and now you ca
 
 ## Configuration Files
 
+Note: Now you can define as many categories as you want, but iTunes uses 3
+
 example of configuration files:
 
 ### channel.yaml (this name is forced)
