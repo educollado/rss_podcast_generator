@@ -73,7 +73,7 @@ subscribe:
 
 ```
 
-### item.yaml (any name ended in .yaml)
+### item.yaml (any name ended in .yaml imn /items folder)
 ```yaml
 title: My super chapter
 link: https://misuperchapter.com/chaper1
