@@ -61,8 +61,8 @@ for i in items:
 	filehandle.write('\n	<link>{}</link>'.format(i['link']))
 	filehandle.write('\n	<dc:creator><![CDATA[{}]]></dc:creator>'.format(i['creator']))
 	filehandle.write('\n	<pubDate>{}</pubDate>'.format(i['pubDate']))
-	for audio_catewgory in i['categories']:
-		filehandle.write('\n	<category><![CDATA[{}]]></category>'.format(audio_catewgory))
+	for audio_category in i['categories']:
+		filehandle.write('\n	<category><![CDATA[{}]]></category>'.format(audio_category))
 	filehandle.write('\n	<description><![CDATA[{}]]></description>'.format(i['description']))
 	filehandle.write('\n	<content:encoded><![CDATA[{}]]></content:encoded>'.format(i['content']))
 	filehandle.write('\n	<enclosure url="{}" length="{}" type="{}" />'.format(i['enclosure'], i['length'], i['type']))
