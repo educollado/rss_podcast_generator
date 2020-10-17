@@ -41,7 +41,7 @@ In output folder you have the file podcast.rss, this is your feed and now you ca
 example of configuration files:
 
 ### channel.yaml (this name is forced)
-```php
+```yaml
 title: A Ratos Podcast
 feed_link: https://mysuperpodcast.com/podcast.rss
 web_link: https://mysuperpodcast.com
@@ -74,7 +74,7 @@ subscribe:
 ```
 
 ### item.yaml (any name ended in .yaml)
-```php
+```yaml
 title: My super chapter
 link: https://misuperchapter.com/chaper1
 creator: John Doe
