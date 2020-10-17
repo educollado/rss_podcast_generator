@@ -12,7 +12,7 @@ You have 2 directories with yaml files:
 In channel.yaml you define generic data from your podcast's feed:
 
 In all yaml files inside folder items you can write everything you need, one file per chapter.
-The name of the fale is not importart but you need the file to end in .yaml.
+The name of the file is not important but you need the file to end in .yaml.
 
 To work after fill the configuration files simple:
 
