@@ -48,7 +48,7 @@ filehandle.write('\n		<url>{}</url>'.format(channel['itunes']['image']))
 filehandle.write('\n		<link>{}</link>'.format(channel['web_link']))
 filehandle.write('\n	</image>')
 for channel_category in channel['itunes']['categories']:
-	filehandle.write('\n	<itunes:category text="{}" />'.format(channel_category))¡
+	filehandle.write('\n	<itunes:category text="{}" />'.format(channel_category))
 filehandle.write('\n	<googleplay:category text="{}"/>'.format(channel['itunes']['categories'][0]))
 filehandle.write('\n	<rawvoice:rating>{}</rawvoice:rating>'.format(channel['rating']))
 filehandle.write('\n	<rawvoice:location>{}</rawvoice:location>'.format(channel['location']))
