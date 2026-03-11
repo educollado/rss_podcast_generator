@@ -7,42 +7,44 @@
 
 Script to generate a podcast feed for static sites.
 
+## Requirements
+
+- Python 3.8+
+
+## Setup
+
+```bash
+# Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
 ## How it works
-You have 2 directories with yaml files: 
-* channel.yaml
-* items/
-    * item.yaml
-    * item2.yaml
-    * something.yaml
 
-In channel.yaml you define generic data from your podcast's feed:
+You have 2 directories with yaml files:
+* `channel.yaml` — podcast-level metadata
+* `items/` — one `.yaml` file per episode
+    * `item.yaml`
+    * `item2.yaml`
+    * `something.yaml`
 
-In all yaml files inside folder items you can write everything you need, one file per chapter.
-The name of the file is not important but you need the file to end in .yaml.
-
-To work after fill the configuration files simple:
+Fill in the configuration files, then run:
 
 ```bash
 python rssgenerator.py
 ```
 
-To install dependencies I suggest to use:
-
-```bash
-pip install -r requirements.txt
-```
-
-## The output
-
-In output folder you have the file podcast.rss, this is your feed and now you can upload where you need it.
+The generated feed will be written to `output/podcast.rss`.
 
 ## Configuration Files
 
-Note: Now you can define as many categories as you want, but iTunes uses 3
+> Note: iTunes uses up to 3 categories, but you can define as many as you want.
 
-example of configuration files:
+### channel.yaml (filename is required)
 
-### channel.yaml (this name is forced)
 ```yaml
 title: A Ratos Podcast
 feed_link: https://mysuperpodcast.com/podcast.rss
@@ -69,25 +71,25 @@ location: Madrid, Spain
 frequency: weekly
 subscribe:
   feed: https://mysuperpodcast.com/podcast.rss
-  itunes: 
-  tunein: 
-  spotify: 
-
+  itunes:
+  tunein:
+  spotify:
 ```
 
-### item.yaml (any name ended in .yaml in /items folder)
+### item.yaml (any name ending in .yaml inside /items)
+
 ```yaml
 title: My super chapter
-link: https://misuperchapter.com/chaper1
+link: https://mysuperpodcast.com/chapter1
 creator: John Doe
 pubDate: Fri, 31 Dec 1999 23:59:59 EST
 categories:
-  - Tehcnology
+  - Technology
   - News
   - Education
 description: Chapter description
 content: Chapter content
-enclosure: https://misuperchapter.com/chaper1.mp3
+enclosure: https://mysuperpodcast.com/chapter1.mp3
 length: 207310
 type: audio/mpeg
 itunes:
@@ -96,5 +98,6 @@ itunes:
   author: John Doe
   duration: 29:14
 ```
+
 ## License
 [GPL3](https://github.com/educollado/rss_podcast_generator/blob/main/LICENSE)

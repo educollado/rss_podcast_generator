@@ -3,15 +3,18 @@
 import yaml
 import os
 import glob
-path='items/' # Directory where I can find the podcast chapters
-items=[] # empty list of dictonaries
+
+PATH = 'items/'  # Directory where I can find the podcast chapters
+
+
 def generate_items():
     '''
-    This function returns a list of dictionaries generated from the yaml files int
-    the directory defined in path
+    This function returns a list of dictionaries generated from the yaml files in
+    the directory defined in PATH
     '''
-    for filename in glob.glob(os.path.join(path, '*.yaml')):
-        with open(os.path.join(filename), 'r') as f: # open in readonly mode
+    items = []
+    for filename in glob.glob(os.path.join(PATH, '*.yaml')):
+        with open(filename, 'r') as f:
             data = yaml.load(f, Loader=yaml.FullLoader)
             items.append(data)
-    return(items)
+    return items
